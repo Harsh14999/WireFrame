@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CET Finance Management Portal - Reports</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body data-page="reports">
+  <div id="appShell"></div>
+  <main class="app-main">
+    <div class="page-toolbar"><div><p class="eyebrow">Reporting</p><h1>Reports</h1></div><div class="toolbar-actions"><button class="btn btn-outline-primary"><i class="fa-solid fa-file-pdf me-2"></i>PDF</button><button class="btn btn-outline-primary"><i class="fa-solid fa-file-excel me-2"></i>Excel</button><button class="btn btn-primary"><i class="fa-solid fa-file-csv me-2"></i>CSV</button></div></div>
+    <section class="report-grid"><button class="report-card active"><i class="fa-solid fa-folder-open"></i><span>Project Report</span></button><button class="report-card"><i class="fa-solid fa-wallet"></i><span>Budget Report</span></button><button class="report-card"><i class="fa-solid fa-building-columns"></i><span>CAPEX Report</span></button><button class="report-card"><i class="fa-solid fa-receipt"></i><span>OPEX Report</span></button><button class="report-card"><i class="fa-solid fa-clipboard-list"></i><span>Spend Request Report</span></button><button class="report-card"><i class="fa-solid fa-file-invoice-dollar"></i><span>Invoice Report</span></button><button class="report-card"><i class="fa-solid fa-stamp"></i><span>Approval Report</span></button></section>
+    <section class="panel mt-4"><div class="filter-bar"><div class="search-box"><i class="fa-solid fa-search"></i><input class="form-control table-search" data-table="reportTable" placeholder="Search report rows"></div><input type="date" class="form-control"><input type="date" class="form-control"><select class="form-select"><option>Status: All</option><option>Approved</option><option>Pending</option><option>Rejected</option></select></div><div class="table-responsive"><table class="table table-hover data-table" id="reportTable"><thead><tr><th>Reference</th><th>Name</th><th>Owner</th><th>Budget</th><th>Consumed</th><th>Status</th></tr></thead><tbody><tr><td>PRJ-3301</td><td>Core Banking Analytics</td><td>Anika Rao</td><td>$1.4M</td><td>$720K</td><td><span class="badge text-bg-success">Approved</span></td></tr><tr><td>SR-2026-0107</td><td>Cloud Cost Guardrails</td><td>Marcus Lee</td><td>$210K</td><td>$0</td><td><span class="badge text-bg-info">Pending</span></td></tr><tr><td>INV-4479</td><td>Northstar Cloud Invoice</td><td>Sara Patel</td><td>$92.6K</td><td>$92.6K</td><td><span class="badge text-bg-warning">Approval</span></td></tr></tbody></table></div><nav class="table-pagination"><span>Showing 1-3 of 128</span><ul class="pagination pagination-sm mb-0"><li class="page-item disabled"><a class="page-link">Prev</a></li><li class="page-item active"><a class="page-link">1</a></li><li class="page-item"><a class="page-link">2</a></li><li class="page-item"><a class="page-link">Next</a></li></ul></nav></section>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script><script src="script.js"></script>
+</body>
+</html>
